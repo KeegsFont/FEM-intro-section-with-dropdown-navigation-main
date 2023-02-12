@@ -1,0 +1,106 @@
+$clr-900: hsl(0, 0%, 98%);
+$clr-400: hsl(0, 0%, 41%);
+$clr-100: hsl(0, 0%, 8%);
+
+$clr-overlay: rgba(0, 0, 0, 0.5);
+
+.fc-900 {
+  color: $clr-900;
+}
+.fc-400 {
+  color: $clr-400;
+}
+.fc-100 {
+  color: $clr-100;
+}
+
+.fs-900 {
+  font-size: 2rem;
+}
+.fs-700 {
+  font-size: 1.5rem;
+}
+.fs-500 {
+  font-size: 1.1rem;
+}
+.fs-400 {
+  font-size: 1rem;
+}
+
+$bp: 47em;
+
+button {
+  cursor: pointer;
+}
+
+// UTILITIES
+.flow > * + * {
+  margin-top: 1rem;
+}
+
+.flex {
+  display: flex;
+
+  &__ai-c {
+    align-items: center;
+  }
+
+  &__jc-sb {
+    justify-content: space-between;
+  }
+}
+
+.grid {
+  display: grid;
+}
+
+.btn-primary {
+  padding: 0.5rem 1.8rem;
+  border: 2px solid $clr-100;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.wrapper {
+  padding-inline: 1.2rem;
+  margin-inline: auto;
+}
+
+// GLOBAL STYLES
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+a,
+.dropdown-label {
+  color: $clr-400;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $clr-100;
+  }
+}
+
+.dropdown {
+  flex-direction: column;
+  padding-inline: 1rem;
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  background-color: $clr-900;
+  box-shadow: 0 0 1rem 0 $clr-overlay;
+  transition: 0.2s ease-in-out all;
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.125rem;
+}

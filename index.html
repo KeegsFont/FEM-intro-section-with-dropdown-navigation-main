@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SITE STYLES -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- JS -->
+    <script src="js/header-menus.js" defer></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="primary-header | flex flex__ai-c wrapper">
+      <div class="primary-header__logo">
+        <a href="#"><img src="images/logo.svg" alt="" /></a>
+      </div>
+
+      <a href="#" class="primary-header__ham"></a>
+
+      <nav class="primary-header__nav | flex flex__jc-sb flex__ai-c">
+        <ul class="primary-header__list | flex flex__jc-sb flex__ai-c">
+          <li class="dropdown-container">
+            <span class="dropdown-label | flex flex__ai-c">
+              Features
+              <img src="images/icon-arrow-up.svg" alt="" />
+            </span>
+            <ul class="dropdown first-of-type | flex">
+              <li>
+                <a href="#">
+                  <img src="images/icon-todo.svg" alt="" />
+                  <span>Todo List</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon-calendar.svg" alt="" />
+                  <span>Calendar</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon-reminders.svg" alt="" />
+                  <span>Reminders</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="images/icon-planning.svg" alt="" />
+                  <span>Planning</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown-container">
+            <span class="dropdown-label | flex flex__ai-c">
+              Company
+              <img src="images/icon-arrow-up.svg" alt="" />
+            </span>
+            <ul class="dropdown second-of-type | flex">
+              <li>
+                <a href="#">History</a>
+              </li>
+              <li>
+                <a href="#">Our Team</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+
+        <div class="primary-header__form-links | flex flex__ai-c">
+          <a href="#">Login</a>
+          <a href="#" class="btn-primary">Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main | flow">
+      <picture class="main__img">
+        <source
+          srcset="images/image-hero-desktop.png"
+          media="(min-width: 47em)"
+        />
+
+        <img src="images/image-hero-mobile.png" alt="Laptop Use image" />
+      </picture>
+      <section class="main__info-container | wrapper">
+        <div class="main__info | flow">
+          <h1 class="page-title">Make remote work</h1>
+          <p class="content">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn-primary">
+            <a href="#" class="fc-900">Learn more</a>
+          </button>
+        </div>
+        <d iv class="main__credits | flex flex__ai-c flex__jc-sb">
+          <img src="images/client-databiz.svg" alt="" />
+          <img src="images/client-audiophile.svg" alt="" />
+          <img src="images/client-meet.svg" alt="" />
+          <img src="images/client-maker.svg" alt="" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
